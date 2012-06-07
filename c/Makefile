@@ -1,0 +1,2 @@
+$(MAKECMDGOALS): 
+	gcc -Wall $(MAKECMDGOALS).c -o $(MAKECMDGOALS).exe
