@@ -1,0 +1,6 @@
+[submodule "clojure/clojure-contrib"]
+	path = clojure/clojure-contrib
+	url = git://github.com/richhickey/clojure-contrib.git
+[submodule "clojure/clojure"]
+	path = clojure/clojure
+	url = git://github.com/richhickey/clojure.git
