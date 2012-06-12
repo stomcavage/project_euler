@@ -8,10 +8,13 @@
 ;; By considering the terms in the Fibonacci sequence whose values do not 
 ;; exceed four million, find the sum of the even-valued terms.
 
+(ns com.tomcavage.project-euler.problem2.core)
+
 (defn fibonacci []
 	(map first (iterate (fn [[a b]] [b (+ a b)]) [0 1])))
 
 (defn fib-sum []
 	(reduce + (filter even? (take-while (fn [x] (< x 4000000)) (fibonacci)))))
 
-(do (println (fib-sum)))
+(defn -main []
+	(do (println (fib-sum))))
