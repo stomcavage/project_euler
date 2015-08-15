@@ -1,0 +1,7 @@
+MAKECMDGOALS=problem8
+
+$(MAKECMDGOALS): $(MAKECMDGOALS).c
+	gcc -Wall $(MAKECMDGOALS).c -o $(MAKECMDGOALS)
+
+clean:
+	rm $(MAKECMDGOALS)
